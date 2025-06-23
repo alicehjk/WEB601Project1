@@ -1,34 +1,51 @@
+/* Typography and base layout */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-nav {
-  background-color: #333;
-  padding: 1em;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
+/* Header section */
 header {
   text-align: center;
-  padding: 2em;
-  background-color: #f4f4f4;
+  padding: 4em 2em;
+  background-color: #f8f9fa; /* Bootstrap's light background */
 }
 
+/* Logo section */
+.logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background-color: #ffffff;
+}
+
+.logo-img {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Footer */
 footer {
-  text-align: center;
-  padding: 1em;
   background-color: #333;
   color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Override Bootstrap navbar for spacing */
+.navbar-nav .nav-link {
+  padding: 0.5rem 1rem;
+}
+
+/* Responsive tweaks if needed */
+@media (max-width: 768px) {
+  header {
+    padding: 2em 1em;
+  }
+
+  .logo-img {
+    max-width: 80%;
+  }
 }
